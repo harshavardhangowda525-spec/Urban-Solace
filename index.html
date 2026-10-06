@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Urban Solace · ಅರ್ಬನ್ ಸೊಲೇಸ್ — American Café by Ulsoor Lake, Bengaluru</title>
+  <meta name="description" content="Urban Solace is a lively American café opposite Ulsoor Lake, Bengaluru — comfort food, conversations, comedy nights and poetry readings. Rated 4.4 from 2,881 reviews. Open until 11 PM." />
+  <meta name="theme-color" content="#16110d" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316110d'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='30' fill='%23d9a066'%3EUS%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Manrope:wght@300;400;500;600;700&family=Noto+Serif+Kannada:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__word">
+        <span>U</span><span>r</span><span>b</span><span>a</span><span>n</span><span class="sp">&nbsp;</span><span>S</span><span>o</span><span>l</span><span>a</span><span>c</span><span>e</span>
+      </div>
+      <div class="loader__kn kn">ಅರ್ಬನ್ ಸೊಲೇಸ್</div>
+      <div class="loader__bar"><i></i></div>
+    </div>
+  </div>
+
+  <!-- Scroll progress -->
+  <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="brand" aria-label="Urban Solace — home">
+        <span class="brand__mark">US</span>
+        <span class="brand__text">
+          <span class="brand__name">Urban Solace</span>
+          <span class="brand__kn kn">ಅರ್ಬನ್ ಸೊಲೇಸ್</span>
+        </span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#events">Events</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#reserve" class="btn btn--accent btn--sm nav__cta" data-reserve data-magnetic>
+        <span>Reserve a Table</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mmenu" id="mobileMenu" aria-hidden="true">
+    <div class="mmenu__bg"></div>
+    <nav class="mmenu__links" aria-label="Mobile">
+      <a href="#home"><small>01</small>Home</a>
+      <a href="#story"><small>02</small>Our Story</a>
+      <a href="#menu"><small>03</small>Menu</a>
+      <a href="#events"><small>04</small>Events</a>
+      <a href="#gallery"><small>05</small>Gallery</a>
+      <a href="#reviews"><small>06</small>Reviews</a>
+      <a href="#contact"><small>07</small>Contact</a>
+    </nav>
+    <div class="mmenu__foot">
+      <a href="#reserve" class="btn btn--accent" data-reserve><span>Reserve a Table</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <p>32, Annaswamy Mudaliar Rd, Ulsoor<br />098450 13055 · Open until 11 PM</p>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero__media">
+        <img class="hero__img" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=2200&q=80" alt="Warm, softly lit café interior with tables set for the evening" fetchpriority="high" />
+        <div class="hero__shade"></div>
+        <canvas class="ambient" data-ambient="hero" aria-hidden="true"></canvas>
+      </div>
+
+      <div class="hero__content container">
+        <div class="hero__brand">
+          <span class="hero__eyebrow"><span class="line"></span>Urban Solace<span class="dot">·</span><span class="kn">ಅರ್ಬನ್ ಸೊಲೇಸ್</span></span>
+        </div>
+        <h1 class="hero__title">
+          <span class="ln"><span>Good Food.</span></span>
+          <span class="ln"><span>Good Conversations.</span></span>
+          <span class="ln"><span><em>Good Solace.</em></span></span>
+        </h1>
+        <p class="hero__sub">A lively American café by Ulsoor Lake — serving comfort food, creating conversations, and hosting unforgettable evenings.</p>
+        <div class="hero__ctas">
+          <a href="#reserve" class="btn btn--accent btn--lg" data-reserve data-magnetic>
+            <span>Reserve a Table</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#menu" class="btn btn--glass btn--lg" data-magnetic>
+            <span>Explore Menu</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__chips">
+        <div class="chip glass"><span class="star">★</span><strong>4.4</strong><span class="muted">· 2,881 Reviews</span></div>
+        <div class="chip glass"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Ulsoor · Bengaluru</div>
+      </div>
+
+      <a href="#story" class="scroll-ind" aria-label="Scroll to Our Story">
+        <span class="scroll-ind__track"><i></i></span>
+        <span class="scroll-ind__txt">Scroll</span>
+      </a>
+    </section>
+
+    <!-- connector -->
+    <div class="connector" aria-hidden="true"><svg viewBox="0 0 2 160" preserveAspectRatio="none"><path d="M1 0 V160"/></svg><span class="connector__dot"></span></div>
+
+    <!-- ============ STORY ============ -->
+    <section class="story section" id="story">
+      <span class="float-deco deco-bean" data-speed="-12" aria-hidden="true"></span>
+      <span class="float-deco deco-ring" data-speed="18" aria-hidden="true"></span>
+      <div class="container story__grid">
+        <div class="story__text">
+          <p class="eyebrow" data-fade>Our Story</p>
+          <h2 class="display" data-split>More Than a Café.<br /><em>A Place to Feel at Home.</em></h2>
+          <p class="lead" data-fade>Urban Solace brings together the things that make an evening worth remembering — honest comfort food, unhurried conversation, a little culture, and a peaceful setting just across from Ulsoor Lake.</p>
+          <p data-fade>Whether you drop in for waffles and iced tea, settle in over burgers and pasta with friends, or stay late for a comedy set or a poetry reading, the café is built for lingering. Cozy, homely, and full of character — it is the kind of place regulars call their own.</p>
+          <div class="story__pillars" data-stagger>
+            <div><span class="pill-ico">🍽</span><strong>Food</strong><small>American comfort classics &amp; café favourites</small></div>
+            <div><span class="pill-ico">💬</span><strong>Conversation</strong><small>A homely room made for lingering</small></div>
+            <div><span class="pill-ico">🎤</span><strong>Culture</strong><small>Comedy, poetry &amp; live evenings</small></div>
+            <div><span class="pill-ico">🌿</span><strong>Calm</strong><small>Opposite Ulsoor Lake</small></div>
+          </div>
+        </div>
+        <div class="story__media">
+          <figure class="rimg story__img story__img--a" data-speed="-6">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1100&q=80" alt="Cozy café corner with warm lights" loading="lazy" />
+          </figure>
+          <figure class="rimg story__img story__img--b" data-speed="8">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="Juicy burger served on a board" loading="lazy" />
+          </figure>
+          <figure class="rimg story__img story__img--c" data-speed="-14">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=80" alt="A cup of coffee on a wooden table" loading="lazy" />
+          </figure>
+          <div class="story__badge glass" data-speed="4">
+            <span class="kn">ಅರ್ಬನ್ ಸೊಲೇಸ್</span>
+            <strong>Ulsoor, Bengaluru</strong>
+            <small>Dine-in · Pickup · Delivery</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="menu section section--dark" id="menu">
+      <canvas class="ambient ambient--soft" data-ambient="menu" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-fade>The Menu</p>
+          <h2 class="display" data-split>Comfort food, <em>done with care.</em></h2>
+          <p class="section-head__sub" data-fade>From Indo-Chinese crowd-pleasers to American classics, waffles and the famous sizzling brownie — here's a taste of what guests come back for.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Menu categories" data-fade>
+          <button role="tab" aria-selected="true" data-cat="popular" class="is-active">Popular</button>
+          <button role="tab" aria-selected="false" data-cat="starters">Starters</button>
+          <button role="tab" aria-selected="false" data-cat="mains">Mains</button>
+          <button role="tab" aria-selected="false" data-cat="burgers">Burgers &amp; Sandwiches</button>
+          <button role="tab" aria-selected="false" data-cat="pasta">Pasta</button>
+          <button role="tab" aria-selected="false" data-cat="salads">Salads</button>
+          <button role="tab" aria-selected="false" data-cat="desserts">Desserts</button>
+          <button role="tab" aria-selected="false" data-cat="drinks">Drinks</button>
+          <span class="tabs__ink" aria-hidden="true"></span>
+        </div>
+
+        <div class="menu__grid" id="menuGrid" aria-live="polite"></div>
+
+        <div class="menu__foot">
+          <p class="demo-note"><span>Demo</span> Item descriptions and photography are illustrative. Prices will be added from Urban Solace's current menu.</p>
+          <a href="#contact" class="btn btn--light" data-magnetic><span>View Full Menu</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EVENTS ============ -->
+    <section class="events section" id="events">
+      <div class="events__bg" aria-hidden="true">
+        <div class="events__glow events__glow--a"></div>
+        <div class="events__glow events__glow--b"></div>
+        <svg class="wave" viewBox="0 0 1440 200" preserveAspectRatio="none">
+          <path class="wave__p wave__p--1" d="M0 100 Q 90 40 180 100 T 360 100 T 540 100 T 720 100 T 900 100 T 1080 100 T 1260 100 T 1440 100" />
+          <path class="wave__p wave__p--2" d="M0 100 Q 120 150 240 100 T 480 100 T 720 100 T 960 100 T 1200 100 T 1440 100" />
+        </svg>
+      </div>
+      <canvas class="ambient" data-ambient="events" aria-hidden="true"></canvas>
+
+      <div class="container">
+        <div class="events__head">
+          <div>
+            <p class="eyebrow eyebrow--light" data-fade>Culture at Urban Solace</p>
+            <h2 class="display display--xl" data-split>Where Bengaluru<br /><em>Comes Together.</em></h2>
+          </div>
+          <div class="events__intro">
+            <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <p data-fade>Urban Solace isn't only somewhere to eat. On the right evening, the café becomes a stage — for stand-up sets, spoken word, live music and the kind of community nights that turn strangers into regulars.</p>
+          </div>
+        </div>
+
+        <div class="events__grid">
+          <article class="ecard" data-tilt>
+            <div class="ecard__media"><img src="https://images.unsplash.com/photo-1527224857830-43a7acc85260?auto=format&fit=crop&w=900&q=80" alt="Microphone on a stand under a spotlight" loading="lazy" /></div>
+            <div class="ecard__body">
+              <span class="ecard__emoji">🎤</span>
+              <h3>Stand-up Comedy</h3>
+              <p>Evenings of laughter with local and visiting comics, up close and personal.</p>
+              <div class="ecard__meta"><span>Date · TBA</span><span>Time · TBA</span></div>
+            </div>
+          </article>
+          <article class="ecard" data-tilt>
+            <div class="ecard__media"><img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=900&q=80" alt="Shelves of books in warm light" loading="lazy" /></div>
+            <div class="ecard__body">
+              <span class="ecard__emoji">📖</span>
+              <h3>Poetry Readings</h3>
+              <p>Open mics and readings for writers, poets and the people who love listening.</p>
+              <div class="ecard__meta"><span>Date · TBA</span><span>Time · TBA</span></div>
+            </div>
+          </article>
+          <article class="ecard" data-tilt>
+            <div class="ecard__media"><img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80" alt="Live performance on stage with warm lights" loading="lazy" /></div>
+            <div class="ecard__body">
+              <span class="ecard__emoji">🎶</span>
+              <h3>Live Events</h3>
+              <p>Music and performances that fill the café with energy after dark.</p>
+              <div class="ecard__meta"><span>Date · TBA</span><span>Time · TBA</span></div>
+            </div>
+          </article>
+          <article class="ecard" data-tilt>
+            <div class="ecard__media"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Friends gathered and laughing together" loading="lazy" /></div>
+            <div class="ecard__body">
+              <span class="ecard__emoji">☕</span>
+              <h3>Community Gatherings</h3>
+              <p>Meetups, celebrations and get-togethers in a space that feels like home.</p>
+              <div class="ecard__meta"><span>Date · TBA</span><span>Time · TBA</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="events__foot">
+          <p class="demo-note demo-note--light"><span>Placeholder</span> Event dates and times to be published by Urban Solace.</p>
+          <a href="#contact" class="btn btn--accent" data-magnetic><span>See Upcoming Events</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LAKE ============ -->
+    <section class="lake" id="lake">
+      <div class="lake__layer lake__bg" data-lake="bg">
+        <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=2200&q=80" alt="Calm lake surrounded by trees" loading="lazy" />
+      </div>
+      <div class="lake__layer lake__haze" data-lake="haze" aria-hidden="true"></div>
+      <canvas class="ambient ambient--fireflies" data-ambient="lake" aria-hidden="true"></canvas>
+      <svg class="lake__layer lake__fg" data-lake="fg" viewBox="0 0 1440 320" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+        <path d="M0 320 V210 C 60 200 90 150 120 160 C 150 120 190 130 210 170 C 240 150 270 165 300 190 L 420 200 C 470 180 520 190 560 205 L 820 215 C 870 190 900 140 940 150 C 970 110 1020 120 1040 160 C 1080 140 1120 160 1140 190 L 1290 200 C 1330 160 1370 150 1400 175 L 1440 180 V320 Z"/>
+        <rect x="0" y="262" width="1440" height="6" opacity=".55"/>
+        <g opacity=".55">
+          <rect x="40" y="240" width="3" height="80"/><rect x="200" y="240" width="3" height="80"/><rect x="360" y="240" width="3" height="80"/><rect x="520" y="240" width="3" height="80"/><rect x="680" y="240" width="3" height="80"/><rect x="840" y="240" width="3" height="80"/><rect x="1000" y="240" width="3" height="80"/><rect x="1160" y="240" width="3" height="80"/><rect x="1320" y="240" width="3" height="80"/>
+        </g>
+        <rect x="0" y="238" width="1440" height="4" opacity=".7"/>
+      </svg>
+
+      <div class="lake__content container">
+        <p class="eyebrow eyebrow--light" data-fade>The Location</p>
+        <h2 class="display display--xl" data-split>Right by<br /><em>Ulsoor Lake.</em></h2>
+        <p class="lake__copy" data-fade>Step away from the city rush and settle into a peaceful café experience just opposite Ulsoor Lake.</p>
+        <div class="lake__addr glass" data-fade>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <span>32, Annaswamy Mudaliar Rd, Ulsoor, Bengaluru</span>
+        </div>
+        <a class="btn btn--light btn--lg" data-magnetic data-fade target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Urban+Solace,+32+Annaswamy+Mudaliar+Rd,+Ulsoor,+Bengaluru,+Karnataka+560042">
+          <span>Get Directions</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery section" id="gallery">
+      <span class="float-deco deco-ring deco-ring--g" data-speed="-10" aria-hidden="true"></span>
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="eyebrow" data-fade>Gallery</p>
+            <h2 class="display" data-split>A glimpse of <em>the solace.</em></h2>
+          </div>
+          <div class="filters" role="tablist" aria-label="Gallery filters" data-fade>
+            <button class="is-active" data-filter="all">All</button>
+            <button data-filter="food">Food</button>
+            <button data-filter="drinks">Drinks</button>
+            <button data-filter="vibe">Vibe</button>
+            <button data-filter="events">Events</button>
+            <button data-filter="interiors">Interiors</button>
+          </div>
+        </div>
+
+        <div class="masonry" id="masonry">
+          <figure class="gitem" data-cat="interiors"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Inviting dining room with warm lighting" loading="lazy" /><figcaption>Interiors</figcaption></figure>
+          <figure class="gitem" data-cat="food"><img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=900&q=80" alt="Golden waffles with toppings" loading="lazy" /><figcaption>Food</figcaption></figure>
+          <figure class="gitem" data-cat="drinks"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=900&q=80" alt="Glasses of iced tea with lemon" loading="lazy" /><figcaption>Drinks</figcaption></figure>
+          <figure class="gitem" data-cat="vibe"><img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=900&q=80" alt="Relaxed café ambience" loading="lazy" /><figcaption>Vibe</figcaption></figure>
+          <figure class="gitem" data-cat="food"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=80" alt="Steak plated with sides" loading="lazy" /><figcaption>Food</figcaption></figure>
+          <figure class="gitem" data-cat="events"><img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=900&q=80" alt="Crowd enjoying a live evening" loading="lazy" /><figcaption>Events</figcaption></figure>
+          <figure class="gitem" data-cat="drinks"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80" alt="Freshly brewed coffee" loading="lazy" /><figcaption>Drinks</figcaption></figure>
+          <figure class="gitem" data-cat="interiors"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80" alt="Café seating in soft evening light" loading="lazy" /><figcaption>Interiors</figcaption></figure>
+          <figure class="gitem" data-cat="food"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=900&q=80" alt="Bowl of pasta" loading="lazy" /><figcaption>Food</figcaption></figure>
+          <figure class="gitem" data-cat="vibe"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=80" alt="Coffee and conversation on a café table" loading="lazy" /><figcaption>Vibe</figcaption></figure>
+          <figure class="gitem" data-cat="events"><img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80" alt="Performer on a warmly lit stage" loading="lazy" /><figcaption>Events</figcaption></figure>
+          <figure class="gitem" data-cat="food"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80" alt="Chocolate brownie dessert" loading="lazy" /><figcaption>Food</figcaption></figure>
+        </div>
+        <p class="demo-note"><span>Demo</span> Stock photography shown for presentation — to be replaced with Urban Solace's own photos.</p>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="reviews section section--cream" id="reviews">
+      <div class="container reviews__top">
+        <div class="rating">
+          <p class="eyebrow" data-fade>Guest Reviews</p>
+          <div class="rating__num"><span class="count" data-count="4.4" data-decimals="1">4.4</span><span class="rating__star">★</span></div>
+          <div class="rating__stars" aria-label="Rated 4.4 out of 5"><i style="--f:1"></i><i style="--f:1"></i><i style="--f:1"></i><i style="--f:1"></i><i style="--f:.4"></i></div>
+          <p class="rating__count"><span class="count" data-count="2881" data-decimals="0">2,881</span> Reviews on Google</p>
+        </div>
+        <div class="reviews__intro">
+          <h2 class="display" data-split>What guests <em>keep coming back for.</em></h2>
+          <p data-fade>Recurring themes from Urban Solace's guest reviews, summarised.</p>
+        </div>
+      </div>
+
+      <div class="marquee" aria-label="Review themes">
+        <div class="marquee__track" id="reviewTrack">
+          <article class="rcard"><span class="rcard__ico">🌿</span><h3>Peaceful atmosphere</h3><p>Guests often mention how calm and unhurried the café feels — a quiet escape from the city.</p><span class="rcard__tag">Paraphrased theme</span></article>
+          <article class="rcard"><span class="rcard__ico">🏡</span><h3>Cozy, homely vibe</h3><p>Reviewers describe a warm, homely space where it's easy to settle in and stay a while.</p><span class="rcard__tag">Paraphrased theme</span></article>
+          <article class="rcard"><span class="rcard__ico">🍔</span><h3>Delicious food</h3><p>Dishes like the burgers, pasta, waffles and sizzling brownie come up again and again.</p><span class="rcard__tag">Paraphrased theme</span></article>
+          <article class="rcard"><span class="rcard__ico">🤝</span><h3>Friendly hospitality</h3><p>Many reviews note welcoming, attentive staff who make visits feel personal.</p><span class="rcard__tag">Paraphrased theme</span></article>
+          <article class="rcard"><span class="rcard__ico">🌊</span><h3>Lake-side location</h3><p>Being right opposite Ulsoor Lake is a highlight for guests looking for a scenic spot.</p><span class="rcard__tag">Paraphrased theme</span></article>
+          <article class="rcard"><span class="rcard__ico">🎤</span><h3>Cultural events</h3><p>Comedy shows and poetry readings are frequently mentioned as a reason to return.</p><span class="rcard__tag">Paraphrased theme</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow" data-fade>However You Like It</p>
+          <h2 class="display" data-split>Solace, <em>your way.</em></h2>
+        </div>
+        <div class="services__grid" data-stagger>
+          <div class="svc">
+            <div class="svc__ico">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path class="draw" d="M10 20h28v4a14 14 0 0 1-28 0z"/><path class="draw" d="M38 22h3a4 4 0 0 1 0 8h-4"/><path class="draw steam" d="M18 8c-2 3 2 5 0 8M24 6c-2 3 2 5 0 8M30 8c-2 3 2 5 0 8"/><path class="draw" d="M8 42h32"/></svg>
+            </div>
+            <h3>Dine-in</h3>
+            <p>Enjoy the café experience in person.</p>
+          </div>
+          <div class="svc">
+            <div class="svc__ico">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path class="draw" d="M6 30V20l5-8h20l6 8h5v10"/><path class="draw" d="M6 30h36"/><circle class="draw wheel" cx="14" cy="32" r="4"/><circle class="draw wheel" cx="34" cy="32" r="4"/><path class="draw" d="M12 20h22"/></svg>
+            </div>
+            <h3>Kerbside Pickup</h3>
+            <p>Quick and convenient pickup.</p>
+          </div>
+          <div class="svc">
+            <div class="svc__ico">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path class="draw" d="M10 18l14-8 14 8v18l-14 8-14-8z"/><path class="draw" d="M10 18l14 8 14-8M24 26v18"/><path class="draw" d="M17 14l14 8"/></svg>
+            </div>
+            <h3>No-contact Delivery</h3>
+            <p>Enjoy Urban Solace from home.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESERVE CTA ============ -->
+    <section class="cta" id="reserve">
+      <div class="cta__bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=80" alt="" loading="lazy" />
+      </div>
+      <canvas class="ambient" data-ambient="cta" aria-hidden="true"></canvas>
+      <div class="cta__rings" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="container cta__inner">
+        <p class="eyebrow eyebrow--light cta__eyebrow">Reservations</p>
+        <h2 class="cta__title" id="ctaTitle"><span class="w">Your</span> <span class="w">Table</span> <span class="w">Is</span> <span class="w"><em>Waiting.</em></span></h2>
+        <p class="cta__sub">Planning dinner, a casual meetup, or an evening event? Come find your solace.</p>
+        <div class="cta__btns">
+          <button class="btn btn--accent btn--xl" data-reserve data-magnetic><span>Reserve a Table</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <a href="tel:+919845013055" class="btn btn--glass btn--xl" data-magnetic>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+            <span>Call 098450 13055</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact section" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <p class="eyebrow" data-fade>Visit Us</p>
+          <h2 class="display" data-split>Come find <em>your solace.</em></h2>
+          <div class="contact__card" data-fade>
+            <h3>Urban Solace <span class="kn">ಅರ್ಬನ್ ಸೊಲೇಸ್</span></h3>
+            <ul>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>32, Annaswamy Mudaliar Rd<br />Ulsoor, Bengaluru<br />Karnataka 560042</span></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+919845013055">098450 13055</a></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Open until 11 PM <span class="open-dot" id="openStatus"></span></span></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12c3-4 6-4 9 0s6 4 9 0"/><path d="M3 17c3-4 6-4 9 0s6 4 9 0" opacity=".5"/></svg><span>Opposite Ulsoor Lake</span></li>
+            </ul>
+            <div class="contact__btns">
+              <a class="btn btn--dark" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Urban+Solace,+32+Annaswamy+Mudaliar+Rd,+Ulsoor,+Bengaluru,+Karnataka+560042" data-magnetic><span>Get Directions</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="btn btn--outline" href="tel:+919845013055" data-magnetic><span>Call Now</span></a>
+              <button class="btn btn--accent" data-reserve data-magnetic><span>Reserve a Table</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="map rimg" id="map">
+          <div class="map__placeholder">
+            <svg class="map__grid" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="currentColor" stroke-width=".6" opacity=".25"/></pattern></defs>
+              <rect width="600" height="600" fill="url(#g)"/>
+              <path d="M-20 420 C 120 380 200 460 320 400 S 520 300 640 340" stroke="currentColor" stroke-width="14" fill="none" opacity=".18"/>
+              <path d="M180 -20 C 220 140 160 260 240 360 S 260 520 220 640" stroke="currentColor" stroke-width="10" fill="none" opacity=".15"/>
+              <ellipse class="map__lake" cx="400" cy="200" rx="150" ry="105"/>
+              <text x="400" y="205" text-anchor="middle" class="map__label">Ulsoor Lake</text>
+            </svg>
+            <div class="map__pin"><span class="map__pulse"></span><span class="map__dot"></span><span class="map__tag glass">Urban Solace</span></div>
+            <button class="map__load glass" id="mapLoad"><span>Load interactive map</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__name">Urban Solace</div>
+          <div class="footer__kn kn">ಅರ್ಬನ್ ಸೊಲೇಸ್</div>
+          <p>A lively American café by Ulsoor Lake — comfort food, conversations and unforgettable evenings.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram (link to be added)"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Facebook (link to be added)"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
+            <a href="#" aria-label="X (link to be added)"><svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+            <a href="#" aria-label="YouTube (link to be added)"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <a href="#home">Home</a><a href="#story">Our Story</a><a href="#menu">Menu</a><a href="#events">Events</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Visit</h4>
+          <p>32, Annaswamy Mudaliar Rd<br />Ulsoor, Bengaluru<br />Karnataka 560042</p>
+          <p><a href="tel:+919845013055">098450 13055</a></p>
+        </div>
+        <div class="footer__col">
+          <h4>Hours</h4>
+          <p>Open until 11 PM</p>
+          <p>Dine-in · Kerbside Pickup<br />No-contact Delivery</p>
+        </div>
+      </div>
+      <div class="footer__big" aria-hidden="true">Urban Solace</div>
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> Urban Solace, Ulsoor, Bengaluru. All rights reserved.</span>
+        <span>Proposed website redesign · demo. Photography is placeholder stock imagery; social links to be added.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating reserve (desktop) -->
+  <button class="float-cta" id="floatCta" data-reserve aria-label="Reserve a Table">
+    <span class="float-cta__pulse"></span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+    <span class="float-cta__txt">Reserve a Table</span>
+  </button>
+
+  <!-- Mobile action bar -->
+  <div class="mbar" id="mbar">
+    <a href="tel:+919845013055"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Call</a>
+    <button class="mbar__main" data-reserve>Reserve a Table</button>
+    <a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Urban+Solace,+32+Annaswamy+Mudaliar+Rd,+Ulsoor,+Bengaluru,+Karnataka+560042"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8z"/></svg>Directions</a>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <div class="lightbox__bg"></div>
+    <img class="lightbox__img" alt="" />
+    <p class="lightbox__cap"></p>
+    <button class="lightbox__close" aria-label="Close">✕</button>
+    <button class="lightbox__nav lightbox__prev" aria-label="Previous image">‹</button>
+    <button class="lightbox__nav lightbox__next" aria-label="Next image">›</button>
+  </div>
+
+  <!-- Reservation modal -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__bg" data-close></div>
+    <div class="modal__panel">
+      <button class="modal__close" data-close aria-label="Close">✕</button>
+      <div class="modal__form-wrap">
+        <p class="eyebrow">Reserve a Table</p>
+        <h3 id="modalTitle" class="modal__title">Your table is <em>waiting.</em></h3>
+        <form class="rform" id="rform" novalidate>
+          <label><span>Name</span><input name="name" required autocomplete="name" placeholder="Your name" /></label>
+          <label><span>Phone</span><input name="phone" type="tel" required autocomplete="tel" placeholder="Mobile number" /></label>
+          <div class="rform__row">
+            <label><span>Date</span><input name="date" type="date" required /></label>
+            <label><span>Time</span><input name="time" type="time" required /></label>
+          </div>
+          <div class="rform__row">
+            <label><span>Guests</span>
+              <select name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7+</option></select>
+            </label>
+            <label><span>Occasion</span>
+              <select name="occasion"><option>Casual</option><option>Dinner</option><option>Celebration</option><option>Event night</option></select>
+            </label>
+          </div>
+          <button type="submit" class="btn btn--accent btn--block"><span>Request Reservation</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="rform__note">Demo form — would connect to Urban Solace's booking system. Prefer to talk? <a href="tel:+919845013055">Call 098450 13055</a></p>
+        </form>
+      </div>
+      <div class="modal__done" hidden>
+        <div class="check"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-15"/></svg></div>
+        <h3 class="modal__title">Request received.</h3>
+        <p>In the live site, Urban Solace would confirm your table shortly. For anything urgent, call <a href="tel:+919845013055">098450 13055</a>.</p>
+        <button class="btn btn--dark" data-close><span>Done</span></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="vendor/ScrollTrigger.min.js" defer></script>
+  <script src="vendor/lenis.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
