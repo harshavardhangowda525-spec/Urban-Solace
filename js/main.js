@@ -1,5 +1,5 @@
 /* =========================================================
-   Urban Solace — interactions & motion
+   Samz Coffee — interactions & motion
    ========================================================= */
 (() => {
   'use strict';
@@ -13,7 +13,7 @@
   const hasGSAP = typeof window.gsap !== 'undefined' && typeof window.ScrollTrigger !== 'undefined';
   const motion = hasGSAP && !reduceMotion;
 
-  const DIRECTIONS = 'https://www.google.com/maps/dir/?api=1&destination=Urban+Solace,+32+Annaswamy+Mudaliar+Rd,+Ulsoor,+Bengaluru,+Karnataka+560042';
+  const DIRECTIONS = 'https://www.google.com/maps/dir/?api=1&destination=32+Annaswamy+Mudaliar+Rd,+Ulsoor,+Bengaluru,+Karnataka+560042';
   const img = (id, w = 900) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
 
   /* ---------- Image fallback ---------- */
@@ -363,8 +363,8 @@
   /* ---------- Map ---------- */
   $('#mapLoad').addEventListener('click', () => {
     const f = document.createElement('iframe');
-    f.src = 'https://www.google.com/maps?q=Urban+Solace,+32+Annaswamy+Mudaliar+Rd,+Ulsoor,+Bengaluru+560042&output=embed';
-    f.title = 'Map showing Urban Solace, Ulsoor, Bengaluru';
+    f.src = 'https://www.google.com/maps?q=32+Annaswamy+Mudaliar+Rd,+Ulsoor,+Bengaluru+560042&output=embed';
+    f.title = 'Map showing Samz Coffee, Ulsoor, Bengaluru';
     f.loading = 'lazy'; f.referrerPolicy = 'no-referrer-when-downgrade'; f.allowFullscreen = true;
     $('#map').appendChild(f);
     $('#mapLoad').remove();

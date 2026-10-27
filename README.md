@@ -1,6 +1,6 @@
-# Urban Solace · ಅರ್ಬನ್ ಸೊಲೇಸ್ — website redesign demo
+# Samz Coffee · ಸ್ಯಾಮ್ಜ್ ಕಾಫಿ — website redesign demo
 
-A proposed website for **Urban Solace**, the American café opposite Ulsoor Lake, Bengaluru. Built as a sales demo.
+A proposed website for **Samz Coffee**, the American café opposite Ulsoor Lake, Bengaluru. Built as a sales demo.
 
 ## Run it
 It's a static site with no build step:
